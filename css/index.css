@@ -1,0 +1,34 @@
+.wrap {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+.naver-layout {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'asid main main aside'
+    'asid main main aside'
+    'footer footer footer footer';
+  width: 100%;
+  height: 1800px;
+}
+.naver-header,
+.naver-content,
+.naver-footer {
+  border: 1px solid black;
+  padding: 20px;
+}
+.naver-header {
+  grid-area: header;
+  width: 12;
+}
+.naver-content {
+  grid-area: main;
+}
+.naver-footer {
+  grid-area: footer;
+}
+.naver-aside {
+  grid-area: aside;
+}
